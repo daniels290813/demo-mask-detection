@@ -178,7 +178,7 @@ def train(
     model = _get_model()
 
     # Apply MLRun's interface for tf.keras:
-    # mlrun_tf_keras.apply_mlrun(model=model, model_name="mask_detector", context=context)
+    mlrun_tf_keras.apply_mlrun(model=model, model_name="mask_detector", context=context)
 
     # Initialize the optimizer:
     optimizer = keras.optimizers.Adam(learning_rate=lr)
